@@ -1,7 +1,6 @@
 #include "scotch_egg.dtsi"
 
 &xiao_serial { status = "disabled"; };
-&vbatt { status = "disabled"; };
 
 &kscan0 {
     col-gpios
