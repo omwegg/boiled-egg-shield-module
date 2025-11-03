@@ -1,0 +1,24 @@
+#include "scotch_egg.dtsi"
+
+&xiao_serial { status = "disabled"; };
+
+/* NFCピン(P0.09, P0.10)はGPIOとして使用するため、ボード設定でNFCを無効化している必要があります。 */
+
+&kscan0 {
+    col-gpios
+        = <&gpio0  2 GPIO_ACTIVE_HIGH>  /* Col0  P0.02 */
+        , <&gpio0 15 GPIO_ACTIVE_HIGH>  /* Col1  P0.15 */
+        , <&gpio0  3 GPIO_ACTIVE_HIGH>  /* Col2  P0.03 */
+        , <&gpio0 19 GPIO_ACTIVE_HIGH>  /* Col3  P0.19 */
+        , <&gpio0 28 GPIO_ACTIVE_HIGH>  /* Col4  P0.28 */
+        , <&gpio1  1 GPIO_ACTIVE_HIGH>  /* Col5  P1.01 */
+        , <&gpio0 29 GPIO_ACTIVE_HIGH>  /* Col6  P0.29 */
+        , <&gpio0  9 GPIO_ACTIVE_HIGH>  /* Col7  P0.09 (NFC1) */
+        , <&gpio0  4 GPIO_ACTIVE_HIGH>  /* Col8  P0.04 */
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>  /* Col9  P0.10 (NFC2) */
+        , <&gpio0  5 GPIO_ACTIVE_HIGH>  /* Col10 P0.05 */
+        , <&gpio0 31 GPIO_ACTIVE_HIGH>  /* Col11 P0.31 (要注意) */
+        ;
+};
+
+

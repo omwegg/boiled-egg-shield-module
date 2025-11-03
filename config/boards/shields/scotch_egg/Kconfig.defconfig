@@ -1,0 +1,8 @@
+if SHIELD_SCOTCH_EGG
+
+config ZMK_KEYBOARD_NAME
+    default "scotch-egg"
+
+endif
+
+
