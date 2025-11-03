@@ -15,7 +15,7 @@
         , <&gpio0  4 GPIO_ACTIVE_HIGH>  /* Col8  P0.04 */
         , <&gpio0 10 GPIO_ACTIVE_HIGH>  /* Col9  P0.10 (NFC2) */
         , <&gpio0  5 GPIO_ACTIVE_HIGH>  /* Col10 P0.05 */
-        , <&gpio0 31 GPIO_ACTIVE_HIGH>  /* Col11 P0.31 (要注意) */
+        , <&gpio0 31 GPIO_ACTIVE_HIGH>  /* Col11 P0.31 (battery monitor) */
         ;
 };
 

@@ -4,6 +4,7 @@
 / {
     chosen {
         zmk,physical-layout = &scotch_egg_physical_layout;
+        zmk,battery = &vbatt;
     };
 
     scotch_egg_physical_layout: scotch_egg_physical_layout {
