@@ -1,8 +1,7 @@
 #include "scotch_egg.dtsi"
 
 &xiao_serial { status = "disabled"; };
-
-/* NFCピン(P0.09, P0.10)はGPIOとして使用するため、ボード設定でNFCを無効化している必要があります。 */
+&vbatt { status = "disabled"; };
 
 &kscan0 {
     col-gpios
